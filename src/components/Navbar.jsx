@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { NavLink } from 'react-router-dom'
 export class Navbar extends Component {
 
   render() {
@@ -13,8 +13,12 @@ export class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
-              </li>   
+                <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+              </li> 
+              <li className="nav-item"><NavLink className="nav-link" to="/US">USA</NavLink></li> 
+              <li className="nav-item"><NavLink className="nav-link" to="/UK">UK</NavLink></li> 
+              <li className="nav-item"><NavLink className="nav-link" to="/Germany">Germany</NavLink></li> 
+              
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
