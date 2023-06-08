@@ -60,7 +60,7 @@ export class News extends Component {
   render() {
     return (
       <div className='container my-3'>
-        <h2 className = "text-center">Sports Tak - All Top Sports Headlines here!</h2>
+        <h2 className = "text-center" style={{marginTop:60,color:"#133863"}}>Sports Tak - All Top Sports Headlines here!</h2>
 
         <div className="row">
           {this.state.articles.map((e) => {
