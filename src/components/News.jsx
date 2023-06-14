@@ -99,7 +99,7 @@ export class News extends Component {
                 <NewsItem
                   title={e.title}
                   description={e.description}
-                  imageurl={e.urlToImage}
+                  imageurl={(e.urlToImage===null || e.urlToImage==="")?"https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-1.jpg":e.urlToImage}
                   source={e.source.name}
                   author={e.author}
                   date={e.publishedAt}
